@@ -14,6 +14,7 @@ using System.Linq;
 using CompanyA;
 using CompanyC;
 using DataProcessing;
+using TemperatureProcessor.NewCode;
 
 namespace TemperatureProcessing
 {
@@ -32,6 +33,13 @@ namespace TemperatureProcessing
          dataCollector.Connect();
          dataCollector.AddResult("Median", (int)result);
          dataCollector.Disconnect();
-      }
+
+
+
+		 //all changes/additions I've made are in the "NewCode" folder
+		 var workflow = SequentialWorflow.CreateInstance();
+		 workflow.Run();
+
+		}
    }
 }

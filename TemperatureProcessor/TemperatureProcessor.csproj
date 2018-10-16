@@ -42,6 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MedianGetter.cs" />
+    <Compile Include="NewCode\BaseWorkflow.cs" />
+    <Compile Include="NewCode\Calculators\Max.cs" />
+    <Compile Include="NewCode\Calculators\Median.cs" />
+    <Compile Include="NewCode\Calculators\Min.cs" />
+    <Compile Include="NewCode\ICalculator.cs" />
+    <Compile Include="NewCode\IPublisher.cs" />
+    <Compile Include="NewCode\ISource.cs" />
+    <Compile Include="NewCode\Publishers\CompanyCPublisher.cs" />
+    <Compile Include="NewCode\Publishers\CompanyDPublisher.cs" />
+    <Compile Include="NewCode\SequentialWorflow.cs" />
+    <Compile Include="NewCode\Sources\CompanyASource.cs" />
+    <Compile Include="NewCode\Sources\CompanyBSource.cs" />
+    <Compile Include="NewCode\Sources\CompanyDSource.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -66,6 +79,7 @@
       <Name>CompanyD</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
